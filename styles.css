@@ -1,0 +1,23 @@
+body{
+    background-image: url('https://i.pinimg.com/originals/0b/3d/0c/0b3d0c7d4cba82343643a5f4c48e2fba.gif');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+div {
+    display: flex; flex-direction: column;
+}
+
+h1 {
+    color:white;
+}
+input {
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: 1em;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+}
+
+button {
+    margin-top: 1em;
+}

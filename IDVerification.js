@@ -10,26 +10,26 @@ function myFunction() {
     switch (validators()) {
         case "errorNum":
             document.getElementById("errorLbl").innerHTML = array.errorNum;
-            document.getElementById("IdNumberInput").style.borderBottom = "1px solid red";
+            document.getElementById("IdNumberInput").style.borderBottom = "2px solid red";
             document.getElementById("sendID").disabled = true;
             break;
         case "errorLen":
             document.getElementById("errorLbl").innerHTML = array.errorLen;
-            document.getElementById("IdNumberInput").style.borderBottom = "1px solid red";
+            document.getElementById("IdNumberInput").style.borderBottom = "2px solid red";
             document.getElementById("sendID").disabled = true;
             break;
         case "errorID":
             document.getElementById("errorLbl").innerHTML = array.errorID;
-            document.getElementById("IdNumberInput").style.borderBottom = "1px solid red";
+            document.getElementById("IdNumberInput").style.borderBottom = "2px solid red";
             document.getElementById("sendID").disabled = true;
             break;
         case "empty":
             document.getElementById("errorLbl").innerHTML = "";
-            document.getElementById("IdNumberInput").style.borderBottom = "1px solid #747474";
+            document.getElementById("IdNumberInput").style.borderBottom = "2px solid black";
             break;
         case "valid":
             document.getElementById("errorLbl").innerHTML = "";
-            document.getElementById("IdNumberInput").style.borderBottom = "1px solid green";
+            document.getElementById("IdNumberInput").style.borderBottom = "2px solid green";
             break;
     }
 }
