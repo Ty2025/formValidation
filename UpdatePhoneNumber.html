@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+<style>
+    body{
+        background-image: url('https://i.pinimg.com/originals/0b/3d/0c/0b3d0c7d4cba82343643a5f4c48e2fba.gif');
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+    }
+    div {
+        display: flex; flex-direction: column; width: 30%;;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid #747474;
+        margin-top: 1em;
+    }
+</style>
+<script src="PhoneNumberVerify.js"></script>  
+  <body>
+
+    <div>
+        <h1>ID Number check</h1>
+
+    <input required="true" id="newNumber" onkeyup="myFunction(this.id)" />
+    <label id="errorLblnewNumber" style="color: red"></label>
+
+    <input required="true" id="confirmNumber" onkeyup="myFunction(this.id)" />
+    <label id="errorLblconfirmNumber" style="color: red"></label>
+
+    <button id="sendID" disabled onclick="location.href='IDNumberForm.html'">Next -></button>
+    </div>
+
+  </body>
+</html>
