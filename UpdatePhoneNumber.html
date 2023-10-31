@@ -10,17 +10,21 @@
 <script src="PhoneNumberVerify.js"></script>  
   <body>
 
-    <div class="position-absolute top-50 start-50 translate-middle">
+    <form action="/action_page.php">
+        <div class="position-absolute top-50 start-50 translate-middle">
+
+      
         <h1>Update phone number</h1>
 
-    <input required="true" id="newNumber" onkeyup="validate(this.id)" text=""/>
+    <input required id="newNumber" onkeyup="validate(this.id)" text=""/>
     <label id="errorLblnewNumber" style="color: red"></label>
 
-    <input required="true" id="confirmNumber" onkeyup="validate(this.id)" />
+    <input required id="confirmNumber" onkeyup="validate(this.id)" />
     <label id="errorLblconfirmNumber" style="color: red"></label>
 
-    <button id="sendID" disabled onclick="location.href='IDNumberForm.html'" class="btn btn-primary">Next -></button>
-    </div>
-
+    <input type="submit" value="->" id="sendID" disabled class="btn btn-primary"/>
+    
+  </div>
+</form>
   </body>
 </html>

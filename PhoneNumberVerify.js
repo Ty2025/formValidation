@@ -44,7 +44,6 @@ function validators(elementId) {
 
     var regex = /^[0-9]+$/;
     var inputField = document.getElementById(elementId).value;
-    match(elementId);
     var len = inputField.length;
     if (len == 0) { return "empty"; }
     if (!(len == 10)) { return "errorLen"; }
@@ -55,24 +54,3 @@ function validators(elementId) {
 
 }
 
-function match(elementId){
-
-
-    switch(elementId){
-        case "newNumber":
-            console.log('conf: ', !!document.getElementById("confirmNumber"));
-            if(!!document.getElementById("confirmNumber").value){
-                if(document.getElementById(elementId).value == document.getElementById("confirmNumber").value){
-                        return "valid"
-                } return "errorMatch";
-            }
-        case "confirmNumber":
-            console.log('new: ', !!document.getElementById("newNumber"));
-            if(!!document.getElementById("newNumber").value){
-                if(document.getElementById(elementId).value == document.getElementById("newNumber").value){
-                        return "valid"
-                } return "errorMatch";
-            }
-
-    } 
-}
